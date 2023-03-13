@@ -1,60 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- XML Declaration: não é preciso alterar -->
-<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never" page-range-format="expanded" initialize="true" default-locale="pt-BR">
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never" page-range-format="expanded" initialize="true" default-locale="en-GB">
   <info>
-    <title>Universidade Federal do Rio Grande do Sul - ABNT (autoria completa) (Português - Brasil)</title>
-    <title-short>UFRGS-ABNT</title-short>
-    <id>http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-ufrgs</id>
-    <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-ufrgs" rel="self"/>
-    <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-ipea" rel="template"/>
-    <!-- Estilo original utilizado como modelo -->
-    <!-- Para autor ficar com nome completo, é necessário preencher com nome completo dos autores na biblioteca. Ver documentação sobre preenchimento dos campos básicos para ABNT -->
-    <link href="https://www.ufrgs.br/bibliotecas/campos-basicos-abnt-mendeley" rel="documentation"/>
-    <!-- Para alguns itens do Mendeley é necessário incluir novos campos -->
-    <link href="https://www.ufrgs.br/bibliotecas/campos-basicos-abnt-zotero" rel="documentation"/>
-    <!-- Para alguns itens do Zotero é necessário utilizar o campo "extra". Exemplo: incluir "publisher-place:" para artigos de periódico.  -->
+    <title>eyamrog-ABNT-En</title>
+    <id>http://www.zotero.org/styles/eyamrog-ABNT-En</id>
+    <link href="http://www.zotero.org/styles/eyamrog-ABNT-En" rel="self"/>
+    <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-ufrgs" rel="template"/>
     <author>
-      <name>Priscila Saraiva Jacobsen</name>
-      <email>jacobsen@bc.ufrgs.br</email>
-      <uri>https://www.ufrgs.br/bibliotecas/</uri>
+      <name>Rogério Yamada</name>
+      <email>eyamrog@gmail.com</email>
+      <uri>https://www.zotero.org/eyamrog</uri>
     </author>
-    <author>
-      <name>Marina Plentz</name>
-      <email>marina.plentz@ufrgs.br</email>
-    </author>
-    <author>
-      <name>Luísia Feichas Alves</name>
-      <email>luisia.alves@bc.ufrgs.br</email>
-      <uri>https://www.zotero.org/luisiafalves</uri>
-    </author>
-    <author>
-      <name>José Antonio Meira da Rocha</name>
-      <email>joseantoniorocha@gmail.com</email>
-      <uri>http://meiradarocha.jor.br</uri>
-    </author>
-    <author>
-      <name>Fernando Bruno</name>
-      <email>fernando.bruno@ufrgs.br</email>
-      <uri>http://www.pgdesign.ufrgs.br/</uri>
-    </author>
-    <author>
-      <name>Kelson Anthony de Menezes</name>
-      <email>kanthony@ebsco.com</email>
-      <uri>https://www.mendeley.com/profiles/kelson-anthony/</uri>
-    </author>
-    <author>
-      <name>Michelangelo Viana</name>
-      <email>mviana@ebsco.com</email>
-      <uri>http://www.mendeley.com/profiles/michelangelo-viana/</uri>
-    </author>
-    <contributor>
-      <name>Leticia Strehl</name>
-      <uri>http://www.mendeley.com/profiles/leticia-strehl/</uri>
-    </contributor>
     <category citation-format="author-date"/>
     <category field="generic-base"/>
-    <summary>The Brazilian Standard Style in accordance with ABNT-NBR 10520.2002 and ABNT-NBR 6023.2018</summary>
-    <updated>2021-07-30T03:36:14+00:00</updated>
+    <summary>The Brazilian Standard Style in accordance with ABNT-NBR 10520.2002 and ABNT-NBR 6023.2018 adapted for terms in English</summary>
+    <updated>2023-03-12T23:52:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="pt-BR">
@@ -284,8 +243,7 @@
   </macro>
   <macro name="access-expression">
     <!-- formato de acesso utiliza a macro accessed -->
-    <text term="accessed" text-case="capitalize-first"/>
-    <text term="at" text-case="lowercase" prefix=" " suffix=": "/>
+    <text term="accessed" text-case="capitalize-first" suffix=": "/>
     <text macro="accessed"/>
   </macro>
   <macro name="accessed">

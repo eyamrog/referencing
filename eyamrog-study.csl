@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never" page-range-format="expanded" default-locale="en-GB">
+  <info>
+    <title>eyamrog-study</title>
+    <id>http://www.zotero.org/styles/eyamrog-study</id>
+    <link href="http://www.zotero.org/styles/eyamrog-study" rel="self"/>
+    <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-ufrgs" rel="template"/>
+    <author>
+      <name>Rogério Yamada</name>
+      <email>eyamrog@gmail.com</email>
+      <uri>https://www.zotero.org/eyamrog</uri>
+    </author>
+    <category citation-format="author-date"/>
+    <category field="generic-base"/>
+    <summary>Customised citation format</summary>
+    <updated>2023-03-26T13:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <macro name="author">
+   <names variable="author"> 
+     <name form="short" delimiter="; " delimiter-precedes-et-al="never" delimiter-precedes-last="always" name-as-sort-order="all">
+       <name-part name="family" text-case="uppercase"/>
+     </name>
+     <et-al font-style="italic"/>
+     <label form="short" text-case="lowercase" prefix=" (" suffix=".)"/>
+     <substitute>
+       <names variable="editor"/>
+       <names variable="collection-editor"/>
+       <names variable="translator"/>
+       <text variable="title" text-case="uppercase"/>
+     </substitute>
+    </names>
+  </macro>
+  <macro name="title">
+    <text variable="title" font-weight="bold"/>
+  </macro>
+  <macro name="issued">
+    <date variable="issued">
+      <date-part name="year" prefix=" " suffix=" "/>
+    </date>
+  </macro>
+  <citation et-al-min="2" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-givenname="true" givenname-disambiguation-rule="by-cite" collapse="year" delimiter-precedes-et-al="never">
+    <sort>
+      <key macro="author"/>
+      <key variable="issued"/>
+      <key variable="year-suffix"/>
+    </sort>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group>
+        <text macro="author" suffix=", "/>
+        <text macro="issued"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography et-al-min="2" et-al-use-first="1" line-spacing="1" entry-spacing="1">
+    <sort>
+      <key macro="author"/>
+      <key variable="year-suffix"/>
+      <key macro="title"/>
+      <key variable="issued"/>
+    </sort>
+    <layout>
+      <text macro="author" suffix=" "/>
+      <text macro="issued" suffix=" "/>
+      <text macro="title" suffix=" "/>
+      <text variable="status" prefix=" - GoodNotes: "/>
+    </layout>
+  </bibliography>
+</style>
